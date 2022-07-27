@@ -1,0 +1,96 @@
+body { 
+  color: var(--text-color); 
+}
+
+.bg-dark { background-color: var(--bg-dark-color) !important; } 
+.bg-light { background-color: var(--bg-light-color) !important; } 
+
+a { 
+  color: var(--link-color); 
+  &:hover { color: var(--link-hover-color); }
+}
+
+#primary-nav {
+  .navbar-toggler {
+    i { color: var(--hamburger-color); }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      background-color: var(--nav-link-bg-color);
+      color: var(--nav-link-fg-color);
+    }
+
+    .nav-link:hover, .dropdown-menu a:hover, .dropdown-item:focus {
+      background-color: var(--nav-link-hover-bg-color); 
+      color: var(--nav-link-hover-fg-color);
+    }
+    .current_page_item a, .dropdown-menu .current_page_item a, .dropdown-menu .current-menu-item a {
+      background-color: var(--nav-active-bg-color);
+      color: var(--nav-active-fg-color);
+      font-weight: bold;
+    }
+    .current_page_item a:hover, .dropdown-menu .current_page_item a:hover, .dropdown-menu .current-menu-item a {
+      background-color: var(--nav-active-bg-color);
+      color: var(--nav-active-fg-color );
+      font-weight: bold;
+    }
+    .current-menu-parent.dropdown>a, .current-menu-parent.dropdown:focus>a {
+      color: var(--nav-active-parent-fg-color);
+    }
+    .current-menu-parent.dropdown, .current-menu-parent.dropdown:focus, .current-menu-parent.dropdown > .nav-link, .current-menu-parent.dropdown:focus > .nav-link {
+      background-color: var(--nav-active-parent-bg-color);
+    }
+  }
+}
+
+.btn-primary { 
+  background-color: var(--primary-button-color) !important; 
+  border-color: var(--primary-button-color) !important; 
+  color: var(--primary-button-text-color) !important;
+
+  &:hover, &:focus { 
+    background-color: var(--primary-button-hover-color) !important; 
+    border-color: var(--primary-button-hover-color) !important; 
+    color: var(--primary-button-hover-text-color) !important;
+  }
+}
+
+.btn-outline-primary { 
+  border-color: var(--primary-button-color) !important;
+  color: var(--primary-button-color) !important; 
+
+  &:hover, &:focus { 
+    background-color:  var(--primary-button-color) !important; 
+    border-color: var(--primary-button-color) !important;
+    color: var(--primary-button-text-color) !important;
+  }  
+}
+
+.btn-secondary {
+
+  background-color: var(--secondary-button-color); 
+  border-color: var(--secondary-button-color) !important; 
+  color: var(--secondary-button-text-color);
+
+  &:hover, &:focus {
+    background-color: var(--secondary-button-hover-color) !important; 
+    border-color: var(--secondary-button-hover-color) !important;
+    color: var(--secondary-button-hover-text-color);
+  }
+}
+
+.btn-outline-secondary { 
+  border-color: var(--secondary-button-color) !important; 
+  color: var(--secondary-button-color) !important; 
+
+  &:hover, &:focus {
+    background-color: var(--secondary-button-color) !important; 
+    border-color: var(--secondary-button-color) !important;
+    color: var(--secondary-button-text-color) !important;
+  }
+}
+
+.form-check-input:checked~.form-check-label::before {
+  background-color: var(--primary-color) !important;
+}
